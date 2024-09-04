@@ -1,9 +1,11 @@
-Ecommerce_Olist-store-Analysis
+# Ecommerce_Olist-store-Analysis
 
-Overview of Project:
+# Overview of Project:
+
 The Olist Store Analysis project aims to analyze customer purchasing patterns and payment statistics on an E-commerce platform, Olist. This project covers several key performance indicators (KPIs) such as weekday vs weekend sales, payment statistics, delivery time, and customer behavior. The analysis is based on nine CSV files, which are cleaned and manipulated to extract valuable insights.
 
-Description of Our source Data:
+# Description of Our source Data:
+
 We chose the Brazilian-eCommerce dataset from ExcelR Solutions for our analysis. This dataset contains approximately 100,000 customer orders, along with corresponding files on product information and English translations of product categories originally in Portuguese. Nine files from the original ExcelR dataset were chosen for further analysis: A] olist_geolocation_dataset
 
 B] olist_customers_dataset
@@ -22,7 +24,8 @@ H] olist_order_reviews_dataset
 
 I] product_category_name_translation.
 
-Questions we hope to answer with our data:
+# Questions we hope to answer with our data:
+
 with this Data we hope to Answer 5 different KPI's
 
 1] Weekdays and weekend payment statistics ?
@@ -35,7 +38,8 @@ with this Data we hope to Answer 5 different KPI's
 
 5] Average shipping days vs review scores ?
 
-Data Modelling
+# Data Modelling
+
 We used joins to create relationship between data tables in Power bi.The Entity Relationship Diagram(ERD) below shows the connectivity between the 9 data tables used in our analysis.
 
 ![olist data modeling](https://github.com/user-attachments/assets/8b545b52-a879-4a27-bc17-c96d8aa17837)
@@ -62,19 +66,22 @@ olist_product_category_name_translation: This table is connected to products dat
 
 Individual datasets were cleaned using Power Query in a Power bi before importing the data tables to powerbi. SQL left joins were used to connect relevant data tables for our My Sql.
 
-Data Cleaning
-Data Cleaning in Power Query
+# Data Cleaning
+
+# Data Cleaning in Power Query
 
 ![olist data cleaning](https://github.com/user-attachments/assets/9ee0e30c-c36d-4c90-98d1-8a8a8b522751)
 
-Step 1: Remove Blank And Null values
+# Step 1: Remove Blank And Null values
+
 1] I cleaned the data in Excel before importing it to PowerBI, I explored the data to find any inconsistencies, duplicates, incorrect format, or missing values. I’ll share some of the inconsistencies and incorrect format I found and how I corrected them, for example in the customer dataset city names were in lower case I used the proper formula and with the help of the helper column I replaced the values.
 
 2] In the orders dataset, there was some Null Values in order_purchase timestamp,order delivery customer date , and each order id is unique hence I removed those blank rows and remove duplicates . In this way, I cleaned the all 9 datasets and then imported the files into PowerBI.
 
 3] In the product dataset, there was some empty product category name, and each product id is unique hence I removed those blank rows. In this way, I cleaned the dataset and then imported the files into PowerBI.
 
-Step 2:Merging Of Datasets
+# Step 2:Merging Of Datasets
+
 1] In order to get the KPI1 we need to merge the Olist_orders dataset and olist_Payments dataset
 
 2] merging of 3 datasets olist orders datase ,olist reviwe dataset and olist payments dataset to get Payment type of credit card with review score of 5
@@ -85,43 +92,46 @@ Step 2:Merging Of Datasets
 
 5]merging of 2 datasets Olist Orders dataset and olist_reviwes dataset to get Average Shipping Days vs review scores
 
-Step 3: Transform
+# Step 3: Transform
+
 1] After Cleaned all the files, I created some extra columns while referencing the order purchase timestamp column to get insight into the day, month, and year of order like day of week, weekend/weekday in the order dataset.
 
 2] For calculating Shipping days With reference of Order purchase time stamp and Order deliver customer date i created customn column renamed to Shipping days in power query applied a formula and there after converted that custom column to Days by rightclick on the column
 
 3] in order to calculate Average Days with reference to order delivery customer table.duplicate the order delivary customer date column ,renamed to Delivery Days and finally tranform to days by right click on the column
 
-My SQL Queries
+# My SQL Queries
 
 
-Creating Data Visualizations
-KPI1
+
+# Creating Data Visualizations
+
+# KPI1
 Now to find the Payment values for weekend vs weekday ,Firstly duplicated the purchase timestamp transform to days of the week and renamed to purchase days.Now I created a custom column for purchase days used if else formula . And to verify if it is working, I m represented this KPI in Donut chart of weekname and Payment values
 
 image
 
-KPI2
+# KPI2
 There are 4 types of payment types, and since orders of review score of 5 are asked, I selected a Waterfall chart for this KPI.
 
 image
 
-KPI3
+# KPI3
 To show this KPI I simply created a gauge chart, now to provide more insights for product category and Average days taken to deliver
 
 image
 
-KPI4
+# KPI4
 Represented this KPI with the help of Stacked column bar chart and analysed that the Average payment is high compared to Avg price for Sao paulo city
 
 image
 
-KPI5
+# KPI5
 Represented this KPI with the help of Area chart with the visualization that shipping days is more for review score 1. As the number of Shipping days to deliver the orders increases the review score decreases.
 
 image
 
-Dashboard
+# Dashboard
 Link to Dashboard on Tableau
 
 Link to Dashboard on Power Bi
