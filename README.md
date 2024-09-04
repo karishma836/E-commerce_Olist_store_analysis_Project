@@ -101,7 +101,7 @@ Individual datasets were cleaned using Power Query in a Power bi before importin
 3] in order to calculate Average Days with reference to order delivery customer table.duplicate the order delivary customer date column ,renamed to Delivery Days and finally tranform to days by right click on the column
 
 # My SQL Queries
-
+      
 
 
 # Creating Data Visualizations
