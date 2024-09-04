@@ -123,6 +123,10 @@ Represented this KPI with the help of Area chart with the visualization that shi
 
 ![Screenshot 2024-09-04 135441](https://github.com/user-attachments/assets/d914e9d1-062d-4aa7-84da-e15c8ca6a8d0)
 
+## My SQL Queries
+
+https://github.com/karishma836/Olist_store_analysis_Project/blob/main/store_data_analysis_sql.sql
+
 
 # Dashboard
 
