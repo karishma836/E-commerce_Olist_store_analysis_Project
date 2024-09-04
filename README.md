@@ -109,32 +109,27 @@ Individual datasets were cleaned using Power Query in a Power bi before importin
 
 ## Creating Data Visualizations
 
-## KPI1
+## KPI1 & KPI2
 Now to find the Payment values for weekend vs weekday ,Firstly duplicated the purchase timestamp transform to days of the week and renamed to purchase days.Now I created a custom column for purchase days used if else formula . And to verify if it is working, I m represented this KPI in Donut chart of weekname and Payment values
-
-image
-
-## KPI2
 There are 4 types of payment types, and since orders of review score of 5 are asked, I selected a Waterfall chart for this KPI.
 
-image
+![Screenshot 2024-09-04 135303](https://github.com/user-attachments/assets/73319194-4879-4aca-bd08-963ae9ff643a)
 
-## KPI3
-To show this KPI I simply created a gauge chart, now to provide more insights for product category and Average days taken to deliver
 
-image
-
-## KPI4
-Represented this KPI with the help of Stacked column bar chart and analysed that the Average payment is high compared to Avg price for Sao paulo city
-
-image
-
-## KPI5
+## KPI3 , KPI4 & KPI5
+To show this KPI I simply created a gauge chart, now to provide more insights for product category and Average days taken to deliver.
+Represented this KPI with the help of Stacked column bar chart and analysed that the Average payment is high compared to Avg price for Sao paulo city.
 Represented this KPI with the help of Area chart with the visualization that shipping days is more for review score 1. As the number of Shipping days to deliver the orders increases the review score decreases.
 
-image
+![Screenshot 2024-09-04 135323](https://github.com/user-attachments/assets/26b9ba02-4fda-40a2-a653-5123d22edad2)
 
-## Dashboard
-Link to Dashboard on Tableau
+## KPI6 & KPI7
 
-Link to Dashboard on Power Bi
+![Screenshot 2024-09-04 135441](https://github.com/user-attachments/assets/d914e9d1-062d-4aa7-84da-e15c8ca6a8d0)
+
+
+# Dashboard
+
+## Dashboard Power Bi
+
+![Screenshot 2024-09-04 135233](https://github.com/user-attachments/assets/32cc7cf2-ad87-4af8-abed-634e82405c6c)
