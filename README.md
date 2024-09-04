@@ -103,10 +103,6 @@ Individual datasets were cleaned using Power Query in a Power bi before importin
 
 3] in order to calculate Average Days with reference to order delivery customer table.duplicate the order delivary customer date column ,renamed to Delivery Days and finally tranform to days by right click on the column
 
-## My SQL Queries
-      
-
-
 ## Creating Data Visualizations
 
 ## KPI1 & KPI2
@@ -130,6 +126,11 @@ Represented this KPI with the help of Area chart with the visualization that shi
 
 # Dashboard
 
-## Dashboard Power Bi
+## Power Bi Dashboard 
 
 ![Screenshot 2024-09-04 135233](https://github.com/user-attachments/assets/32cc7cf2-ad87-4af8-abed-634e82405c6c)
+
+## Tableau Dashboard 
+
+![Screenshot 2024-03-15 234410](https://github.com/user-attachments/assets/ad15f43e-5a97-4ab1-9a29-8507fc1ea48e)
+
