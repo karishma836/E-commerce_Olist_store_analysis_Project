@@ -65,7 +65,7 @@ Individual datasets were cleaned using Power Query in a Power bi before importin
 Data Cleaning
 Data Cleaning in Power Query
 
-image
+![olist data cleaning](https://github.com/user-attachments/assets/9ee0e30c-c36d-4c90-98d1-8a8a8b522751)
 
 Step 1: Remove Blank And Null values
 1] I cleaned the data in Excel before importing it to PowerBI, I explored the data to find any inconsistencies, duplicates, incorrect format, or missing values. I’ll share some of the inconsistencies and incorrect format I found and how I corrected them, for example in the customer dataset city names were in lower case I used the proper formula and with the help of the helper column I replaced the values.
