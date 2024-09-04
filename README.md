@@ -41,7 +41,7 @@ with this Data we hope to Answer 5 different KPI's
 
 5] Average shipping days vs review scores ?
 
-## Data Modelling
+# Data Modelling
 
 We used joins to create relationship between data tables in Power bi.The Entity Relationship Diagram(ERD) below shows the connectivity between the 9 data tables used in our analysis.
 
@@ -69,7 +69,7 @@ olist_product_category_name_translation: This table is connected to products dat
 
 Individual datasets were cleaned using Power Query in a Power bi before importing the data tables to powerbi. SQL left joins were used to connect relevant data tables for our My Sql.
 
-## Data Cleaning
+# Data Cleaning
 
 ## Data Cleaning in Power Query
 
@@ -103,7 +103,7 @@ Individual datasets were cleaned using Power Query in a Power bi before importin
 
 3] in order to calculate Average Days with reference to order delivery customer table.duplicate the order delivary customer date column ,renamed to Delivery Days and finally tranform to days by right click on the column
 
-## Creating Data Visualizations
+# Creating Data Visualizations
 
 ## KPI1 & KPI2
 Now to find the Payment values for weekend vs weekday ,Firstly duplicated the purchase timestamp transform to days of the week and renamed to purchase days.Now I created a custom column for purchase days used if else formula . And to verify if it is working, I m represented this KPI in Donut chart of weekname and Payment values
@@ -123,7 +123,7 @@ Represented this KPI with the help of Area chart with the visualization that shi
 
 ![Screenshot 2024-09-04 135441](https://github.com/user-attachments/assets/d914e9d1-062d-4aa7-84da-e15c8ca6a8d0)
 
-## My SQL Queries
+# My SQL Queries
 
 https://github.com/karishma836/Olist_store_analysis_Project/blob/main/store_data_analysis_sql.sql
 
